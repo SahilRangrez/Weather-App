@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A simple weather app made using HTML, CSS, and JavaScript">
+        <meta name="author" content="Saman Jain">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./weather-images/favicon.ico">
+        <link rel="stylesheet" href="./weather-style.css">
+        <title>SkyCast</title>
+    </head>
+    <body>
+        <div class="heroText">
+            SkyCast
+            <p>Enter your city name <br>to know about it's weather.</p>
+        </div>
+        <div class="hero">
+            <div class="searchBox">
+                <input type="text" class="inputBox" id="inputBox" placeholder="Enter City" autocomplete="off">
+            </div>
+            <div class="weatherDetails">
+                <div class="date" id="date">
+                    
+                </div>
+                <div class="weatherStatus">
+                    <div class="temperature" id="temperature">
+                        
+                    </div>
+                    <div class="humidity" id="humidity">
+                        
+                    </div>
+                    <div class="wind" id="wind">
+                        
+                    </div>
+                    <div class="weather" id="weather">
+                        
+                    </div>
+                    <div class="weather-icon">
+                        <img src="http://openweathermap.org/img/wn/01d@2x.png" id="weather-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./weather-app.js"></script>
+    </body>
+</html>

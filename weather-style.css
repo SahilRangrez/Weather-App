@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+:root{
+    --dark: #0a0a28;
+    --light: #f5f5f5;
+    --red: #5a1e1e;
+    --fGlobal: 'Montserrat', sans-serif;
+    --fTitle: 'Cinzel', serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(./weather-images/clear.jpg);
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: var(--fGlobal);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heroText{
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--dark);
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 8px var(--light) , -1px -1px 8px var(--light);
+    font-family: var(--fTitle);
+}
+.heroText p{
+    font-size: 18px;
+    margin: 8px 0;
+    text-shadow: none;
+    font-family: var(--fGlobal);
+}
+.hero{
+    width: 300px;
+    background-color: var(--light);
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(120deg, rgba(245, 245, 245, 0.6) 1.36%, rgba(245, 245, 245, 0.1) 100%);
+    box-shadow: 0px 2px 35px -2px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(22px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 8px;
+}
+.hero > *{
+    margin-bottom: 18px;
+}
+.inputBox{
+    width: 100%;
+    background-color: #f5f5f590;
+    border: none;
+    outline: none;
+    color: var(--red);
+    font-size: 18px;
+    height: 50px;
+    border-radius: 4px;
+    text-align: center;
+}
+.inputBox:focus{
+    background-color: var(--light);
+}
+.weatherDetails{
+    display: none;
+    color: var(--red);
+    font-weight: 600;
+    padding: 18px;
+    line-height: 42px;
+    border-radius: 4px;
+    background-color: #f5f5f590;
+    height: 380px;
+}
+.weatherStatus{
+    padding: 12px;
+}
+.weatherStatus .temperature{
+    font-size: 42px;
+    font-weight: 800;
+    text-shadow: 2px 2px 3px #5a1e1e70;
+    margin-bottom: 4px;
+}
+.humidity , .wind , .weather{
+    font-size: 16px;
+}
+.weather-icon img{
+    background-color: #1b1f2230;
+    border-radius: 8px;
+}
